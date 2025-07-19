@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=TV UI
+Exec=java -jar tvui.jar
+Comment=
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=tvtime
+Type=Application
+
