@@ -2,7 +2,9 @@
 # sudo apt install $(grep -vE "^\s*#" apt-packages | tr "\n" " ")
 # flatpak install $(grep -vE "^\s*#" flatpaks | tr "\n" " ")
 
-sudo cp tvui.jar /usr/local/bin/tvui.jar
-sudo chmod +x /usr/local/bin/tvui.jar
-sudo cp tvui.desktop /etc/xdg/autostart/
-chmod 644 /etc/xdg/autostart/tvui.desktop
+ROOT=$1
+
+sudo cp tvui.jar $ROOT/usr/local/bin/tvui.jar
+sudo chmod +x $ROOT/usr/local/bin/tvui.jar
+sudo cp tvui.desktop $ROOT/etc/xdg/autostart/
+chmod 644 $ROOT/etc/xdg/autostart/tvui.desktop
