@@ -116,5 +116,10 @@
     "services": [],
     "swap": true,
     "timezone": "Africa/Cairo",
-    "version": null
+    "version": null,
+    "custom-commands": [
+        "cd /home/devel; git clone https://aur.archlinux.org/paru.git",
+        "chown -R devel:devel /home/devel/paru",
+        "usermod -aG docker devel"
+    ]
 }
